@@ -1,0 +1,45 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        tools:context="com.example.user.mapexam1.MapsActivity" />
+
+<Button
+    android:id="@+id/btnShowLocation"
+    android:layout_width="100dip"
+    android:layout_height="50dip"
+    android:text="START"
+    android:layout_marginLeft="100dip"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/map"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:editable="false"
+        android:textSize="10dp"
+        android:text="log print here\n" />
+    <Button
+        android:id="@+id/btnclearLocation"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:text="STOP"
+        android:layout_marginLeft="100dip"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
